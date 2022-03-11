@@ -27,9 +27,9 @@ body {
 } */
 
 .item {
-  flex-basis: 100px;
+  flex: 1; /* 1 0 0/100px : combination of 3 props: grow shrink basis*/
   height: 100px;
-  background-color: #254de4;
+  background-color: #1742cf;
   color: white;
   margin: 10px;
 
@@ -40,14 +40,11 @@ body {
 }
 
 .item:nth-of-type(1) {
-  flex-grow: 1;
 }
 
 .item:nth-of-type(2) {
-  flex-grow: 2;
 }
 
 .item:nth-of-type(3) {
   /* using psuedo-selector ; to select each flex item  */
-  flex-grow: 1;
 }
