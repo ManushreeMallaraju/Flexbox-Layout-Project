@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+  display: flex; /* defaults to flex row : main-axis flex-direction:row */
+  background-color: #d19d9d;
+}
+
+/* .flex-container::after {  to show how it align without flex
+  content: '';
+  clear: both;
+  display: block;
+} */
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: #254de4;
+  color: white;
+  margin: 10px;
+  /* float: left;  without using flex-container*/
+}
