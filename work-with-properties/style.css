@@ -16,6 +16,8 @@ body {
   /* justify-content: end; */
   /* Always is on the cross axis*/
   /* align-items: start;  */
+
+  flex-wrap: wrap;
 }
 
 /* .flex-container::after {  to show how it align without flex
