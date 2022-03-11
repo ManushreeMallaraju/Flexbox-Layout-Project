@@ -9,11 +9,14 @@ body {
 }
 
 .flex-container {
-  height: 400px; /* to align vertically : no way to put items else*/
+  height: 500px;
+  flex-direction: column; /*to create column*/
   display: flex; /* defaults to flex row : main-axis flex-direction:row */
   background-color: #d19d9d;
-  justify-content: space-between;
-  align-items: center; /* The property used to align items on the cross-axis */
+  /* Always is on the main axis*/
+  justify-content: end;
+  /* Always is on the cross axis*/
+  align-items: start; /* The property used to align items on the cross-axis */
 }
 
 /* .flex-container::after {  to show how it align without flex
@@ -31,15 +34,7 @@ body {
   /* float: left;  without using flex-container*/
 }
 
-.item:nth-of-type(1) {
-  align-self: start;
-}
-
-.item:nth-of-type(2) {
-  align-self: center;
-}
-
-.item:nth-of-type(3) {
-  /*using psuedo-selector ; to select each flex item */
+/* .item:nth-of-type(3) {
+  using psuedo-selector ; to select each flex item 
   align-self: end;
-}
+} */
